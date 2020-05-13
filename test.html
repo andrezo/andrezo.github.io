@@ -2,6 +2,14 @@
 <body>
 
 <p>Hello world!</p>
-<img src="does-not-exist" onerror="alert('Spin time');while(true) {}"/>
+<script>
+function countDown() {
+    for(var i = 99; i > 0; i -=10) {
+        var template = i + " bottles of beer on the wall, " + i + " bottles of beer. Take one down, pass it around, " + (i - 1) + " bottles of beer on the wall.."
+        alert(template);
+    }
+}
+</script>
+<img src="does-not-exist" onerror="countDown()"/>
 </body>
 </html> 
